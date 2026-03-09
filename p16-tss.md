@@ -2,7 +2,7 @@
 
 ### Handling interrupts while a process is running
 
-The previous part did not handle interrupts. Before running the task, we had
+The previous part did not handle interrupts while a process was already running. Before running the task, we had
 changed the stack segment `ss` (in `pinit`). But when interrupt happens, the
 processor does not want to use the same stack segment as then it will be writing
 "OS level" information like the interrupt number into the process' address
